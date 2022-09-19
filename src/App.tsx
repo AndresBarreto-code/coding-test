@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Rome2RioTest
+        Rome2Rio Test
       </header>
       <main className='Main'>
         <Flights />

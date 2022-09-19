@@ -1,8 +1,17 @@
 export type FlightType = {
-  durationInMinutes: String
-  isBookable: Boolean | String
-  isSchedulable: Boolean | String
-  priceRange: any
-  segments: any
-  title: String
+  durationInMinutes: number
+  isBookable: Boolean | string
+  isSchedulable: Boolean | string
+  priceRange: {
+    currencyCode: string
+    high: number
+    low: number
+  }
+  segments: Segment[]
+  title: string
+}
+
+type Segment = {
+  duration: number
+  transitMode: string
 }
