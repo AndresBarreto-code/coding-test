@@ -56,7 +56,7 @@ const Flight = ({
         marginTop: 'auto',
         marginBottom: 'auto',
       }}
-      disabled={!flight.isBookable}>
+      disabled={typeof flight.isBookable === 'string' ? flight.isBookable === 'false': !flight.isBookable}>
        Book now
       </Button>
       <ListItemText
